@@ -1,0 +1,13 @@
+<div class="container mt-4" style='margin-right: 0;'>
+    <div style="display: block; width: 800px; height: 1000px;">
+      <canvas baseChart
+              [datasets]="gradyearData"
+              [labels]="gradyearLabels"
+              [options]="gradyearOptions"
+              [legend]="gradyearLegend"
+              [chartType]="gradyearType">
+      </canvas>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>

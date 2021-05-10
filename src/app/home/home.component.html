@@ -1,0 +1,51 @@
+  
+<!-- <img *ngIf="user" class="card-img-top img-responsive photo" src="{{ user.photoUrl }}">
+<div *ngIf="user" class="card-block">
+    <h4 class="card-title">{{ user.name }}</h4>
+    <p class="card-text">{{ user.email }}</p>
+    <p class="card-text">Logged in with {{ user.provider }}</p>
+</div> -->
+
+<!-- <div *ngIf="user">
+<div class="card-block" *ngIf="user.provider === GoogleLoginProvider.PROVIDER_ID">
+    <button class="btn" (click)="refreshGoogleToken()">Refresh google token</button>
+  </div>
+  </div>
+ -->
+
+
+
+<section class="ftco-section">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-12 col-lg-10">
+              <div class="wrap d-md-flex">
+                  <div class="img" style="background-image: url(C:\Users\Jai\Angular\GradManagement\src\app\images\accolite.jpg);">
+            </div>
+                  <div class="login-wrap p-4 p-md-5">
+                <div class="d-flex">
+                    <div class="w-100">
+                        <h3 class="mb-4 text-center">Welcome to <br/> MS AU Management Portal</h3>
+                    </div>
+                </div>
+              <form class="signin-form">
+                  <div class="form-group">
+                      <button type="submit" class="form-control btn btn-primary rounded submit px-3" (click)="socialSignIn()">Sign In</button>
+                  </div>
+              </form>
+              <p class="text-center">Account restricted to Accolite Digital members only.</p>
+          </div>
+        </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<footer class="page-footer font-small blue pt-4">
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://www.accolite.com/"> Accolite Digital</a>
+  </div>
+</footer>
+
+<router-outlet></router-outlet> 

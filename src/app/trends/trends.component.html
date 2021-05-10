@@ -1,0 +1,22 @@
+<div class="container mt-4" style='margin-right: 100px;'>
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-12">
+            <div class="card p-4 mt-3">
+                <div class="d-flex justify-content-center px-5">
+                    <div class="display-4">Trends</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <br>
+  
+<div class="container mt-4" style='margin-right : 100px;'>
+    <ul *ngFor = "let chart of trends">
+        <button type="button" class="btn btn-primary" (click)="openChart(chart.id)">
+            <span class="badge badge-light">{{chart.id}}</span>&nbsp; {{chart.name}}
+        </button>
+    </ul>   
+</div>
+
+<router-outlet></router-outlet>
